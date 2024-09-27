@@ -4,28 +4,28 @@
   <a href="#badge">
     <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
   </a>
-  <a href="https://github.com/casdoor/casdoor-go-sdk/actions/workflows/ci.yml">
+  <a href="https://github.com/nbcx/auth-go-sdk/actions/workflows/ci.yml">
     <img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/actions/workflow/status/casdoor/casdoor-go-sdk/ci.yml?branch=master">
   </a>
-  <a href="https://github.com/casdoor/casdoor-go-sdk/releases/latest">
+  <a href="https://github.com/nbcx/auth-go-sdk/releases/latest">
     <img alt="GitHub Release" src="https://img.shields.io/github/v/release/casdoor/casdoor-go-sdk.svg">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://goreportcard.com/report/github.com/casdoor/casdoor-go-sdk">
-    <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/casdoor/casdoor-go-sdk?style=flat-square">
+  <a href="https://goreportcard.com/report/github.com/nbcx/auth-go-sdk">
+    <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/nbcx/auth-go-sdk?style=flat-square">
   </a>
-  <a href="https://github.com/casdoor/casdoor-go-sdk/blob/master/LICENSE">
+  <a href="https://github.com/nbcx/auth-go-sdk/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/casdoor/casdoor-go-sdk?style=flat-square" alt="license">
   </a>
-  <a href="https://github.com/casdoor/casdoor-go-sdk/issues">
+  <a href="https://github.com/nbcx/auth-go-sdk/issues">
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/casdoor/casdoor-go-sdk?style=flat-square">
   </a>
   <a href="#">
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/casdoor/casdoor-go-sdk?style=flat-square">
   </a>
-  <a href="https://github.com/casdoor/casdoor-go-sdk/network">
+  <a href="https://github.com/nbcx/auth-go-sdk/network">
     <img alt="GitHub forks" src="https://img.shields.io/github/forks/casdoor/casdoor-go-sdk?style=flat-square">
   </a>
   <a href="https://discord.gg/5rPsrAzK7S">
@@ -42,13 +42,13 @@ Casdoor Go SDK is very simple to use. We will show you the steps below.
 First in your go project, just need to run:
 
 ```bash
-go get github.com/casdoor/casdoor-go-sdk@latest
+go get github.com/nbcx/auth-go-sdk@latest
 ```
 
 and import this when you need:
 
 ```go
-import "github.com/casdoor/casdoor-go-sdk/casdoorsdk"
+import "github.com/nbcx/auth-go-sdk/casdoorsdk"
 ```
 
 ## Step2. Init
@@ -56,7 +56,7 @@ import "github.com/casdoor/casdoor-go-sdk/casdoorsdk"
 Initialization requires 6 parameters, which are all string type:
 
 | Name (in order)  | Must | Description                                         |
-|------------------|------|-----------------------------------------------------|
+| ---------------- | ---- | --------------------------------------------------- |
 | endpoint         | Yes  | Casdoor server URL, such as `http://localhost:8000` |
 | clientId         | Yes  | Application.clientId                                |
 | clientSecret     | Yes  | Application.clientSecret                            |
