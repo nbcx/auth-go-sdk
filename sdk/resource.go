@@ -162,3 +162,21 @@ func (c *Client) DeleteResource(resource *Resource) (bool, error) {
 
 	return resp.Data == "Affected", nil
 }
+
+func (c *Client) DeleteResourceByName(name string) (bool, error) {
+	resource := Resource{
+		Owner: c.OrganizationName,
+		Name:  name,
+	}
+	postBytes, err := json.Marshal(resource)
+	if err != nil {
+		return false, err
+	}
+
+	resp, err := c.DoPost("delete-resource", nil, postBytes, false, false)
+	if err != nil {
+		return false, err
+	}
+
+	return resp.Data == "Affected", nil
+}
