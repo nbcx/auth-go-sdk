@@ -30,6 +30,8 @@ func (c *Client) ParseJwtToken(token string) (*Claims, error) {
 			return nil, err
 		}
 
+		fmt.Println("publicKey", publicKey)
+
 		return publicKey, nil
 	})
 
